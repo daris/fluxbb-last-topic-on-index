@@ -2,10 +2,10 @@
 ##
 ##        Mod title:  Last Topic on Index
 ##
-##      Mod version:  1.3
-##  Works on FluxBB:  1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4-rc3
-##     Release date:  2011-03-31
-##      Review date:  YYYY-MM-DD (Leave unedited)
+##      Mod version:  1.3.1
+##  Works on FluxBB:  1.4.8, 1.4.7, 1.4.6, 1.4.5, 1.4.4, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.4-rc3
+##     Release date:  2012-01-21
+##      Review date:  2012-01-21
 ##           Author:  daris (daris91@gmail.com)
 ##
 ##      Description:  Shows the title of the topic with the latest post on the index page of the forum.
@@ -79,7 +79,7 @@ include/functions.php
 
 		$db->query('UPDATE '.$db->prefix.'forums SET num_topics='.$num_topics.', num_posts='.$num_posts.', last_post='.$last_post.', last_post_id='.$last_post_id.', last_poster=\''.$db->escape($last_poster).'\' WHERE id='.$forum_id) or error('Unable to update last_post/last_post_id/last_poster', __FILE__, __LINE__, $db->error());
 
-#		
+#
 #---------[ 10. REPLACE WITH ]---------------------------------------------------------------------
 #
 
